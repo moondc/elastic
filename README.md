@@ -22,3 +22,7 @@ Anytime a new container is created, these steps will need to be ran
 1. In the SSH terminal, create a new kibana enrollment token `docker exec -ti <container_id> /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana`
 
 This wasn't tested e2e but should theoretically work.
+
+### Issues
+Cert will expire in 3 years, I can probably find a way to automate the renewal
+- look into a volume mount for the certs and look in the usr/share/elasticsearch/bin directory for a tool to renew
