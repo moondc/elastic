@@ -1,4 +1,4 @@
-# elastic
+# elasticsearch
 
 Running elasticsearch for the first time will auto generate a password.  Since we strive to do things running docker detached (-d) we will need to perform some additional steps to get things stable.
 
